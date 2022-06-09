@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="campo">
+        <h1 id="titulo"></h1><strong>Cadastro para Desenvolvedores</strong></h1>
+        <br>
+        <br>
+        <p id="subtitulo"><strong>Selecione Informações</strong></p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text"Nome="nome"id="nome" required>
+            </div>
+            <br>
+
+            <div class="Campo">
+                <label for="Apelido"><strong>Apelido</strong></label>
+                <input type="text"Nome="Apelido"id="Apelido" required>
+            </div>
+            </fieldset>
+            <br>
+
+        <div class="campo">
+            <label for="Email"><strong>email</strong></label>
+            <input type="Email" nome="nome" id="Email" required>
+        </div>
+
+
+           <div class="campo">
+            <label><strong>Você é um recrutador(a) ?</strong></label>
+
+            <label>
+                <input type="radio" nome="recrutador(a)" value="sim">sim
+            </label>
+            <label>
+                <input type="radio" nome="recrutador(a)" value="não">não
+            </label>
+            </div>
+           
+            <div class="campo">
+            <label><strong>Qual area você desenvolve?</strong></label>
+            <label>
+                <br>
+                <input type="radio" nome="Desenvoldor(a) web" value="frontend">Frontend
+            </label>
+            <br>
+            <label> 
+                <input type="radio" nome="Desenvolvedor(a) web" value="backend">Backend
+            </label>
+            <br>
+            <label>
+                <input type="radio" nome="Desnvolvedor(a) web" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select>id="Senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Skills:</strong></label><br><br>
+                    <input type="checkbox" id="skill1" nome="skill" value="HTML">
+                    <label for="skll1">HTML</label>
+                    <input type="checkbox" id="skill2" nome="skill2" value=" CSS">
+                    <label for="skill2">CSS</label> 
+                    <input type="checkbox" id="skill3" nome="skill3" value="Python">
+                    <label for="skill3">Python</label>
+                    <input type="checkbox" id="skill4" nome="skill4" value="JavaScript">
+                    <label for="skill4">JavaScript</label>
+                    <input type="checkbox" id="skill5" nome="skill5" value="Java">
+                    <label for="skill5">Java</label>
+                    <input type="checkbox" id="skill6" nome="skill6" value="C#">
+                    <label for="skill6">C#</label>
+                    <input type="checkbox" id="skill7" nome="skill7" value="PHP">
+                    <label for="skill7">PHP</label>
+
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label><strong>Um pouco da sua experiência ou mais Skills que tiveste contato:</strong></label>
+                <textarea rows="8" style="width: 30em;" id="experiencia" nome="experiencia"></textarea>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <button class="botao" type="submit">concluído</button>
+    </form>
+
+</body>
+</html>
